@@ -1,9 +1,10 @@
-<ngx-audio-player [playlist]="singleTrack"
+<ngx-audio-player #audioPlayer
+                  [playlist]="singleTrack"
                   [displayTitle]="true"
-                  [autoPlay]="true"
                   [displayVolumeControls]="true"
                   [displayRepeatControls]="false"
                   [disablePositionSlider]="true"
                   [displayArtist]="true"
                   [displayDuration]="true"
+                  [autoPlay]="false"
                   [expanded]="true"></ngx-audio-player>

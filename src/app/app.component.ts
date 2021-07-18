@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import {Track} from 'ngx-audio-player';
+import {AfterContentInit, AfterViewInit, Component, OnInit, ViewChild} from '@angular/core';
+import {AudioPlayerComponent, Track} from 'ngx-audio-player';
 
 @Component({
   selector: 'app-root',
@@ -9,12 +9,15 @@ import {Track} from 'ngx-audio-player';
 export class AppComponent {
   title = 'clemence-audio';
   
+  @ViewChild('audioPlayer', { static: true })
+  audioPlayer?: AudioPlayerComponent;
+  
+  
   singleTrack: Track[] = [
     {
       title: 'In Love',
       link:
           'assets/expo.mp3',
-      duration: 227,
       artist: 'A Himitsu feat. Nori'
     }
   ];
