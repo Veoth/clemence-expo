@@ -17,7 +17,7 @@ export class AppComponent {
     {
       title: 'In Love',
       link:
-          'assets/expo.mp3',
+          'https://dl.dropboxusercontent.com/s/9v0psowra7ekhxo/A%20Himitsu%20-%20In%20Love%20%28feat.%20Nori%29.flac?dl=0',
       artist: 'A Himitsu feat. Nori'
     }
   ];
