@@ -1,10 +1,18 @@
-<ngx-audio-player #audioPlayer
-                  [playlist]="singleTrack"
-                  [displayTitle]="true"
-                  [displayVolumeControls]="true"
-                  [displayRepeatControls]="false"
-                  [disablePositionSlider]="true"
-                  [displayArtist]="true"
-                  [displayDuration]="true"
-                  [autoPlay]="false"
-                  [expanded]="true"></ngx-audio-player>
+<div class="main-container d-flex flex-column">
+    <div>
+        <img src="assets/background.jpeg">
+    </div>
+    <div class="h-100">
+        <ngx-audio-player #audioPlayer class="h-100"
+                      [playlist]="singleTrack"
+                      [displayTitle]="true"
+                      [displayVolumeControls]="true"
+                      [displayRepeatControls]="false"
+                      [disablePositionSlider]="true"
+                      [displayArtist]="true"
+                      [displayDuration]="true"
+                      [autoPlay]="false"
+                      [expanded]="true">
+        </ngx-audio-player>
+    </div>
+</div>
