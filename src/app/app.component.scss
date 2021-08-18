@@ -1,10 +1,16 @@
 .main-container {
   height: 100vh;
+  .title {
+    font-size: xx-large;
+  }
+
+  .logo {
+    display: block;
+    width: 100vw;
+  }
+  font-size: large;
+  color: white;
 }
 
-img {
-  display: block;
-  height: 85vh;
-  width: 100vw;
-}
+
 

@@ -1,4 +1,14 @@
-body {
-  margin: 0;
-  height: 100vh;
+//@font-face {
+//  font-family: 'UnionFont';
+//  src: url('~src/assets/Union-Regular.otf');
+//}
+
+body  {
+  background: url("~src/assets/background-tmp.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  //font-family: 'UnionFont';
 }
