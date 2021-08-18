@@ -1,9 +1,12 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
 //@font-face {
 //  font-family: 'UnionFont';
 //  src: url('~src/assets/Union-Regular.otf');
 //}
 
 body  {
+  margin: 20px;
   background: url("~src/assets/background-tmp.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
