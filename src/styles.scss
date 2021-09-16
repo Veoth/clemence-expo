@@ -1,5 +1,22 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 //@import "~@fortawesome/fontawesome-free/css/all.min.css";
+
+@media (max-width: 768px) {
+  .ngx-d-none {
+    display: block!important;
+  }
+}
+
+mat-slider.ngx-d-none {
+  display: block!important;
+}
+
+@media (max-width: 760px) {
+  mat-slider.ngx-d-none {
+    display: block!important;
+  }
+}
+
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 //@font-face {
 //  font-family: 'UnionFont';
@@ -13,5 +30,7 @@ body  {
   -o-background-size: cover;
   background-size: cover;
 
-  //font-family: 'UnionFont';
+  //font-family: 'UnionFont';blockblock
+
+
 }
