@@ -17,10 +17,8 @@ export class AppComponent {
   
   singleTrack: Track[] = [
     {
-      title: '1400',
-      link: `assets/expo.mp3`,
-      duration: 212,
-      artist: 'Yung Kartz'
+      title: '',
+      link: `assets/expo.mp3`
     }
   ];
 }
