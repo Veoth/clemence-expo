@@ -1,5 +1,7 @@
 import {AfterContentInit, AfterViewInit, Component, Host, HostBinding, OnInit, ViewChild} from '@angular/core';
-import {AudioPlayerComponent, Track} from 'ngx-audio-player';
+import {HttpClient} from '@angular/common/http';
+import {BehaviorSubject, Observable} from 'rxjs';
+import {map, tap} from 'rxjs/operators';
 
 @Component({
   selector: 'app-root',
@@ -13,12 +15,31 @@ export class AppComponent {
   
   // @ViewChild('audioPlayer', { static: true })
   // audioPlayer?: AudioPlayerComponent;
+  // expoMp3$!: Observable<any>;
+  // loading$ = new BehaviorSubject(true);
+  // singleTrack$!: Observable<Array<Track>>;
+  //
+  // constructor(private readonly http: HttpClient) {
+  //   this.singleTrack$ = this.http.get('assets/expo.mp3').pipe(
+  //       tap(() => {
+  //         this.loading$.next(false);
+  //         console.log("false");
+  //       }),
+  //       map((mp3: any) => {
+  //         return [
+  //           {
+  //             title: '',
+  //             link: mp3
+  //           }
+  //         ];
+  //       })
+  //   );
+  // }
   
-  
-  singleTrack: Track[] = [
+  playlist = [
     {
       title: '',
-      link: `assets/expo.mp3`
+      link: 'assets/expo.mp3'
     }
   ];
 }
